@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/album-sorting-with-face-recognition/static/css/main.154cda19.chunk.css",
+    "main.js": "/album-sorting-with-face-recognition/static/js/main.e8a57540.chunk.js",
+    "main.js.map": "/album-sorting-with-face-recognition/static/js/main.e8a57540.chunk.js.map",
+    "runtime-main.js": "/album-sorting-with-face-recognition/static/js/runtime-main.0c85e0f2.js",
+    "runtime-main.js.map": "/album-sorting-with-face-recognition/static/js/runtime-main.0c85e0f2.js.map",
+    "static/js/2.18efb574.chunk.js": "/album-sorting-with-face-recognition/static/js/2.18efb574.chunk.js",
+    "static/js/2.18efb574.chunk.js.map": "/album-sorting-with-face-recognition/static/js/2.18efb574.chunk.js.map",
+    "static/js/3.20487cb3.chunk.js": "/album-sorting-with-face-recognition/static/js/3.20487cb3.chunk.js",
+    "static/js/3.20487cb3.chunk.js.map": "/album-sorting-with-face-recognition/static/js/3.20487cb3.chunk.js.map",
+    "index.html": "/album-sorting-with-face-recognition/index.html",
+    "static/css/main.154cda19.chunk.css.map": "/album-sorting-with-face-recognition/static/css/main.154cda19.chunk.css.map",
+    "static/js/2.18efb574.chunk.js.LICENSE.txt": "/album-sorting-with-face-recognition/static/js/2.18efb574.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c85e0f2.js",
+    "static/js/2.18efb574.chunk.js",
+    "static/css/main.154cda19.chunk.css",
+    "static/js/main.e8a57540.chunk.js"
+  ]
+}
