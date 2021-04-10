@@ -36,7 +36,7 @@ const UploaderForm = (props) => {
     <div className="uploader">
       <form className="form" onSubmit={getImageInfo}>
         <label>
-          {props.type}:
+          name:
           <input
             type="text"
             disabled={props.type === "familyMembers" ? false : true}
