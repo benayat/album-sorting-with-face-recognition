@@ -1,4 +1,6 @@
 import "../style/manageFamily.css";
+import { FaHandPointUp } from "react-icons/fa";
+
 import { useCallback, useContext, useEffect } from "react";
 import UploaderForm from "../components/UploaderForm";
 import FamilyMemberCard from "../components/familyMemberCard";
@@ -54,12 +56,14 @@ const ManageFamily = () => {
 
       <div className="containerLeftRightFlex">
         <div className="intro">
-          <h1>welcome to your album sorter!</h1>
-          <p>
-            add family members with the uploader, and <br />
-            right click to delete, and then just add random
-            <br /> pictures and look them up in the right album
-          </p>
+          <div className="upndown">
+            <FaHandPointUp />
+            <p>add family members</p>
+          </div>
+          <div className="upndown">
+            <FaHandPointUp />
+            <p>add'n'drag images</p>
+          </div>
         </div>
         <div key="familyCards" className="familyCards">
           {familyMembers &&
