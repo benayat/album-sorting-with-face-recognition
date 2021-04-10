@@ -1,0 +1,7 @@
+.dropZone {
+  border: 1px dotted black;
+  font-size: 3rem;
+  max-width: 40vw;
+  height: 70vh;
+  margin-right: 1rem;
+}

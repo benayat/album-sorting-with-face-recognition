@@ -1,0 +1,24 @@
+.body {
+  box-sizing: border-box;
+  background: linear-gradient(to right, red, yellow);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+}
+inputs * {
+  flex: 1;
+}
+.containerLeftRightFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.leftSide {
+  flex: 3fr;
+}
+.rightSide {
+  flex: 2fr;
+}

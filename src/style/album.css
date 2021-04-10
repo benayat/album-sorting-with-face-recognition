@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(to right, rgb(235, 203, 203), yellow);
+  padding-left: 2vh;
+}
+.albumContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.albumContainer img {
+  max-height: 30vh;
+  width: auto;
+}
