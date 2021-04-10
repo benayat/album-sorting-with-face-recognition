@@ -27,4 +27,5 @@ libraries used:
 - faceapi js: https://github.com/justadudewhohacks/face-api.js/
 - idb: https://www.npmjs.com/package/idb
 - react-icons: https://www.npmjs.com/package/react
+- react-dropZone: https://www.npmjs.com/package/react-dropzone
 - that's it. if I forgot someone, please let me know.
