@@ -2,6 +2,9 @@ intro:
 what does it do?
 - sort multiple images to albums, while reonnizing the faces inside using faceapi js.
 
+**view demo**: https://silly-shirley-d82e96.netlify.app/manageFamily
+- please allow some loading time, depending on your cpu and network connection. after all, this app does some heavy lifting. 
+
 technologies and features used: 
 - since there are some pretty big files for using the model calculations, I couldn't use local storage, which is limited to 5mb total, and with uncomfortable JSON sting style, so - 
 - all activity is done offline, using the **indexeddb**(with idb wrapper) from the browser api. 
