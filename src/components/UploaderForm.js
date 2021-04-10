@@ -1,8 +1,7 @@
-import '../style/uploaderForm.css';
-import React, { useState } from 'react';
+import "../style/uploaderForm.css";
+import React, { useState } from "react";
 const UploaderForm = (props) => {
-  const [currentLabel, setLabel] = useState('');
-  const [currentTitle, setTitle] = useState('');
+  const [currentLabel, setLabel] = useState("");
   const [file, setFile] = useState(null);
 
   //read the file and decode it
@@ -14,9 +13,7 @@ const UploaderForm = (props) => {
       return;
     }
     let reader = new FileReader();
-    const file = e.target.files[0];
-    const name = file.name;
-    setTitle(name);
+    // const file = e.target.files[0];
     reader.readAsDataURL(e.target.files[0]);
     reader.onload = (e) => {
       // setTitle(reader.name);
@@ -25,51 +22,29 @@ const UploaderForm = (props) => {
   };
   //submit
   const restoreInitialState = () => {
-    setLabel('');
-    setFile(null);
+    setLabel("");
   };
   const getImageInfo = async (e) => {
     e.preventDefault();
     if (currentLabel !== null && file !== null) {
-      switch (props.type) {
-        case 'familyMembers': {
-          await props.addNewFamilyMember(currentLabel, file);
-          restoreInitialState();
-          break;
-        }
-        case 'images': {
-          await props.addNewImageToAlbums(currentTitle, file);
-          restoreInitialState();
-          break;
-        }
-        default:
-          break;
-      }
+      await props.addNewFamilyMember(currentLabel, file);
+      restoreInitialState();
     }
   };
 
   return (
-    <div className='uploader'>
-      <form className='form' onSubmit={getImageInfo}>
-        {/* <label>
-          image title:
-          <input
-            type='text'
-            disabled={props.type === 'familyMembers' ? true : false}
-            value={currentTitle}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-        </label> */}
+    <div className="uploader">
+      <form className="form" onSubmit={getImageInfo}>
         <label>
           {props.type}:
           <input
-            type='text'
-            disabled={props.type === 'familyMembers' ? false : true}
+            type="text"
+            disabled={props.type === "familyMembers" ? false : true}
             value={currentLabel}
             onChange={(e) => setLabel(e.target.value)}
           />
         </label>
-        <input type='file' onChange={getFile} />
+        <input type="file" onChange={getFile} />
         <button>upload image</button>
       </form>
     </div>

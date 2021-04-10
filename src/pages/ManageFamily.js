@@ -48,31 +48,30 @@ const ManageFamily = () => {
           button
           addNewFamilyMember={addNewFamilyMember}
         />
-        <UploaderForm type="images" addNewImageToAlbums={addNewImageToAlbums} />
+        {/* <UploaderForm type="images" addNewImageToAlbums={addNewImageToAlbums} /> */}
+        <DropZone addNewImageToAlbums={addNewImageToAlbums} />
       </div>
+
       <div className="containerLeftRightFlex">
-        <div className="leftSide">
+        <div className="intro">
           <h1>welcome to your album sorter!</h1>
           <p>
             add family members with the uploader, and <br />
             right click to delete, and then just add random
             <br /> pictures and look them up in the right album
           </p>
-          <div key="familyCards" className="familyCards">
-            {familyMembers &&
-              familyMembers.map((member) => {
-                return (
-                  <FamilyMemberCard
-                    key={member.label}
-                    src={member.src}
-                    label={member.label}
-                  />
-                );
-              })}
-          </div>
         </div>
-        <div className="rightSide">
-          <DropZone addNewImageToAlbums={addNewImageToAlbums} />
+        <div key="familyCards" className="familyCards">
+          {familyMembers &&
+            familyMembers.map((member) => {
+              return (
+                <FamilyMemberCard
+                  key={member.label}
+                  src={member.src}
+                  label={member.label}
+                />
+              );
+            })}
         </div>
       </div>
     </div>

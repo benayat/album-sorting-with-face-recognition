@@ -3,22 +3,32 @@
   background: linear-gradient(to right, red, yellow);
 }
 
+.pageContainer {
+  width: 95vw;
+  height: 95vh;
+}
+
 .inputs {
   display: flex;
   flex-direction: row;
   border: 1px solid white;
-}
-inputs * {
-  flex: 1;
-}
-.containerLeftRightFlex {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
-.leftSide {
-  flex: 3fr;
+
+.containerLeftRightFlex {
+  width: 95vw;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(../media/mainBackground.jfif);
 }
-.rightSide {
-  flex: 2fr;
+.intro {
+  color: black;
+}
+.familyCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
