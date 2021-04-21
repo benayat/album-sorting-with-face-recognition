@@ -7,11 +7,14 @@ import FamilyMemberCard from "../components/familyMemberCard";
 import { FaceapiContext } from "../context/faceapi/FaceapiContext";
 import { FamilyContext } from "../context/family/FamilyContext";
 import DropZone from "../components/DropZone";
+import Tutorial from "../components/Tutorial";
+import Loader from "../components/Loader";
 
 const ManageFamily = () => {
   const {
     loadModules,
     modulesLoaded,
+    loading,
     addFamilyMemberFaceapi,
     addNewImageFaceapi,
   } = useContext(FaceapiContext);
@@ -43,7 +46,7 @@ const ManageFamily = () => {
   };
 
   return (
-    <div className="pageContainer">
+    <div className="pageContainerFamily">
       <div className="inputs">
         <UploaderForm
           type="familyMembers"
@@ -65,6 +68,8 @@ const ManageFamily = () => {
             <p>add'n'drag images</p>
           </div>
         </div>
+        <Tutorial />
+        <Loader loading={loading || !modulesLoaded} />
         <div key="familyCards" className="familyCards">
           {familyMembers &&
             familyMembers.map((member) => {

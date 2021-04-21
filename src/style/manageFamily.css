@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 .body {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   background: linear-gradient(to right, red, yellow);
 }
 
-.pageContainer {
-  width: 95vw;
+.pageContainerFamily {
+  width: 100vw;
   height: 95vh;
 }
 
@@ -17,7 +17,8 @@
 }
 
 .containerLeftRightFlex {
-  width: 95vw;
+  width: 100vw;
+  height: 95vh;
   background: linear-gradient(
       to right,
       rgba(255, 255, 255, 1),
@@ -33,17 +34,24 @@
   font-weight: bolder;
   font-size: 3vh;
 }
+
 .familyCards {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 .upndown {
-  animation: upndown 0.5s infinite linear;
+  animation: upndown 0.5s normal linear;
 }
 
 @keyframes upndown {
+  25% {
+    transform: translateY(20px);
+  }
   50% {
+    transform: translateY(0);
+  }
+  75% {
     transform: translateY(20px);
   }
   100% {

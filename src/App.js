@@ -4,9 +4,10 @@ import ImageProvider from "./context/images/ImagesProvider";
 import FamilyProvider from "./context/family/FamilyProvider";
 import FaceapiProvider from "./context/faceapi/FaceapiProvider";
 import AlbumCrud from "./pages/AlbumCrud";
-import Loader from "./pages/Loader";
+import SignUp from "./pages/SignUp";
 import ManageFamily from "./pages/ManageFamily";
 import Header from "./pages/Header";
+import Login from "./pages/Login";
 function App() {
   return (
     <FamilyProvider>
@@ -16,9 +17,12 @@ function App() {
             <Route path="/">
               <Header />
             </Route>
-            <Route exact path="/">
-              <Loader />
+            {/* <Route exact path="/">
+              <SignUp />
             </Route>
+            <Route exact path="/login">
+              <Login />
+            </Route> */}
             <Route exact path="/manageFamily">
               <ManageFamily />
             </Route>

@@ -1,0 +1,59 @@
+[7248:21120:2021-4-13 15:35:47.967] Main Start
+[7248:21120:2021-4-13 15:35:47.967] Command line:"C:\Users\benay\OneDrive\??????\github\face-recognition-ability-show\Zoom_cm_fo42anktZ9vvrZo4_mawGX0Wupvqcq+aBqtwfje474cAtgtsMnA+Sj@7DezY8RU4cM6ZlwC_k254399fbaefaf841_.exe"  Instance:0xA20000 Show State:1
+[7248:21120:2021-4-13 15:35:47.991] C:\
+[7248:23176:2021-4-13 15:35:47.991] [process_requst] start, url:https://us02web.zoom.us/conf/launch
+[7248:23176:2021-4-13 15:35:48.916] [req_state_read_status_code] zHttpQueryInfo complete, status:200
+[7248:23176:2021-4-13 15:35:48.916] [req_state_read_status_code] zHttpQueryInfo complete, status:200 Error: 0
+[7248:23176:2021-4-13 15:35:48.916] [log_response_content] Content length (1048576 as unknown):1410 , Total read: 1410 , Error No: 0 , Status code: 200
+[7248:23176:2021-4-13 15:35:48.916] [log_response_content] header:
+[7248:23176:2021-4-13 15:35:48.916] HTTP/1.1 200 
+Date: Tue, 13 Apr 2021 12:35:49 GMT
+Content-Type: text/plain;charset=utf-8
+Content-Length: 1410
+Connection: keep-alive
+x-zm-trackingid: WEB_53849c7b0478d6d1e0707e2f87dfcf6f
+X-Content-Type-Options: nosniff
+Content-Security-Policy: upgrade-insecure-requests; default-src https://*.zoom.us https://zoom.us https://us01pbxstatic.zoom.us blob: 'self'; script-src 'unsafe-eval' 'unsafe-inline' blob: about: https://ruanshi2.8686c.com https://ajax.aspnetcdn.com/ajax/3.5/MicrosoftAjax.js https://appsforoffice.microsoft.com https://assets.zendesk.com https://autocomplete.demandbase.com https://cdn.wootric.com https://cdncache-a.akamaihd.net https://connect.facebook.net https://consent.trustarc.com https://d.adroll.mgr.consensu.org https://d2b9h3rz4xo53c.cloudfront.net https://d24cgw3uvb9a9h.cloudfront.net https://googleads.g.doubleclick.net https://pi.pardot.com https://s.dcbap.com https://s.ytimg.com https://s3.amazonaws.com https://scout-cdn.salesloft.com https://sealserver.trustwave.com https://secure-cdn.mplxtms.com https://serve2.cheqzone.com https://snap.licdn.com https://sp.analytics.yahoo.com https://static.zdassets.com https://static2.sharepointonline.com https://tag.demandbase.com https://tpc.googlesyndication.com https://tracking.g2crowd.com https://trk.techtarget.com https://www.comeet.co https://www.dropbox.com https://www.google-analytics.com https://static.zoom.com.cn https://www.googleadservices.com/pagead/conversion_async.js https://www.googletagmanager.com/gtm.js https://www.googletagmanager.com/* https://optimize.google.com https://tagmanager.google.com https://www.gstatic.com/recaptcha/releases/ https://www.gstatic.cn/recaptcha/releases/ https://google.com https://docs.google.com https://cse.google.com https://maps.google.com https://www.google.com https://www.recaptcha.net https://linkedin.com https://platform.linkedin.com https://px.ads.linkedin.com https://ads.linkedin.com https://www.youtube.com https://us01pbxstatic.zoom.us https://www.gstatic.com https://www.gstatic.cn https://fonts.googleapis.com https://hcaptcha.com https://assets.hcaptcha.com https://*.ada.support https://*.adroll.com https://*.hotjar.com https://*.zoom.us https://*.zoomcloudpbx.com https://*.zoomus.cn https://*.zopim.com https://adroll.com https://zoom.us https://apis.google.com https://gstatic.zoom.com.cn 'self'; img-src https: about: blob: data: 'self'; style-src https: safari-extension: chrome-extension: 'unsafe-inline' data: 'self'; font-src https: safari-extension: chrome-extension: blob: data: 'self'; connect-src * about: blob: data: 'self'; media-src * rtmp: blob: data: 'self'; frame-src https: ms-appx-web: zoommtg: zoomus: wvjbscheme: data: 'self'; object-src 'none'; base-uri 'none';
+X-FRAME-OPTIONS: SAMEORIGIN
+Set-Cookie: zm_aid=""; Domain=.zoom.us; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: zm_haid=""; Domain=.zoom.us; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: web_zak=""; Domain=.zoom.us; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: cred=C28C9BE7F1A1B57960A0D9F158CE2DA2; Path=/; Secure; HttpOnly
+Set-Cookie: _zm_page_auth=us02_c_cWqd2jp5QLyTFZDoiL-Bwg; Domain=.zoom.us; Path=/; Secure; HttpOnly
+p3p: CP="NOI ADM DEV PSAi COM NAV OUR OTR STP IND DEM"
+Set-Cookie: _zm_ssid=us02_c_Av5QhWIaTPKISKh4nSlCoA; Domain=.zoom.us; Path=/; Secure; HttpOnly
+Set-Cookie: _zm_ctaid=xwWW-MPZQCiEz35JyxjvjQ.1618317349209.c8735590a8fe733138ff91e03c7eff75; Domain=.zoom.us; Expires=Tue, 13-Apr-2021 14:35:49 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: _zm_chtaid=727; Domain=.zoom.us; Expires=Tue, 13-Apr-2021 14:35:49 GMT; Path=/; Secure; HttpOnly
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+
+
+[7248:23176:2021-4-13 15:35:48.916] [process_requst] End for url:https://us02web.zoom.us/conf/launch, return code:200, Error:0, Response content size:1410
+[7248:21120:2021-4-13 15:35:48.940] [client_has_installed_app] found path:
+[7248:21120:2021-4-13 15:35:48.940]  ***NULL-POINTER-PLACEHOLDER***
+[7248:21120:2021-4-13 15:35:48.940] [param_query_local_path] path is: C:\Users\benay\AppData\Roaming\Zoom\ZoomDownload\ dir create response : 1 system error: 1008
+[7248:21120:2021-4-13 15:35:48.940] [downloader_run] State:0
+[7248:15888:2021-4-13 15:35:48.940] [process_requst] start, url:https://us02web.zoom.us/client/latest/Installer.exe
+[7248:21120:2021-4-13 15:35:48.940] [client_has_installed_app] found path:
+[7248:21120:2021-4-13 15:35:48.940]  ***NULL-POINTER-PLACEHOLDER***
+[7248:15888:2021-4-13 15:35:50.221] [req_state_read_status_code] zHttpQueryInfo complete, status:200
+[7248:15888:2021-4-13 15:35:50.221] [req_state_read_status_code] zHttpQueryInfo complete, status:200 Error: 0
+[7248:15888:2021-4-13 15:35:50.674] [read_response_file] Status Code:200, content length: 756456, total read: 756456, error code: 0
+[7248:15888:2021-4-13 15:35:50.695] [process_requst] End for url:https://us02web.zoom.us/client/latest/Installer.exe, return code:200, Error:0, Response content size:0
+[7248:21120:2021-4-13 15:35:50.758] [handle_download_job_done] Index: 1 Curr index: 1 StatusCode: 200 Error: 0 Response is Empty. 
+[7248:15888:2021-4-13 15:35:50.773] [process_requst] start, url:https://us02web.zoom.us/client/latest/Zoom.msi
+[7248:15888:2021-4-13 15:35:51.497] [req_state_read_status_code] zHttpQueryInfo complete, status:200
+[7248:15888:2021-4-13 15:35:51.497] [req_state_read_status_code] zHttpQueryInfo complete, status:200 Error: 0
+[7248:15888:2021-4-13 15:35:52.415] [read_response_file] Status Code:200, content length: 14884062, total read: 14884062, error code: 0
+[7248:15888:2021-4-13 15:35:52.434] [process_requst] End for url:https://us02web.zoom.us/client/latest/Zoom.msi, return code:200, Error:0, Response content size:0
+[7248:21120:2021-4-13 15:35:52.450] [handle_download_job_done] Index: 2 Curr index: 2 StatusCode: 200 Error: 0 Response is Empty. 
+[7248:21120:2021-4-13 15:35:52.450] C:\Users\benay\AppData\Roaming\Zoom\ZoomDownload\Installer.exe
+[7248:21120:2021-4-13 15:35:52.450] ZInstaller --conf.mode=silent --ipc_wnd=460054
+[7248:21120:2021-4-13 15:35:52.698] [launch_silent_install] Installer process created, result:42
+[7248:21120:2021-4-13 15:35:59.772] C:\Users\benay\AppData\Roaming\Zoom\bin\Zoom.exe
+[7248:21120:2021-4-13 15:35:59.772] client_launch_app: 
+[7248:21120:2021-4-13 15:35:59.772] C:\Users\benay\AppData\Roaming\Zoom\bin\Zoom.exe
+[7248:21120:2021-4-13 15:35:59.772] "--url=zoommtg://win.launch?h.domain=us02web.zoom.us&h.path=join&confid=dXNzPUpJakNIX3ZNZEVOZVNxRzhOMng4M2hEbkg3REhrdEc0NDlfYmJERDA3Nk9ZVXEtc0RQemxPSmJwRkk1MUhOWWhtVXQxTDdLbDdlYndfVWQ2TW50Qnl6RWdQcXdTUXFjZkh3Lk5aTzFzMFl2WHIwUXVoS1MmdGlkPWZmMTE2OTA5N2EwNjQ0ZGVhMWY0N2VmMzA2ZjFlODcy&mcv=0.92.11227.0929&stype=0&zc=0&browser=chrome&action=join&confno=89770347759&pwd=U3VBb3dIeXdEUGNhczdpZi94QzBtQT09"
+[7248:21120:2021-4-13 15:35:59.803] [client_launch_app] Zoom app process created, result:42
+[7248:21120:2021-4-13 15:35:59.847] Main End

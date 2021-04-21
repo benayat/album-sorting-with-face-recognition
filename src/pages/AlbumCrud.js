@@ -2,6 +2,7 @@ import "../style/album.css";
 import { useCallback, useContext, useEffect } from "react";
 import { useParams } from "react-router";
 import { ImagesContext } from "../context/images/ImagesContext";
+import AlbumCarousel from "../components/AlbumCarousel";
 const AlbumCrud = () => {
   const { label } = useParams();
   const {
@@ -30,21 +31,27 @@ const AlbumCrud = () => {
 
   return (
     <div className="pageContainer">
-      <div classlabel="album">
+      <div className="album">
         <h1>{label} album</h1>
         <div className="albumContainer">
-          {!loading &&
-            imagesByLabel.length >= 1 &&
-            imagesByLabel.map((image) => {
-              return (
-                <img
-                  key={image.title}
-                  alt={image.title}
-                  src={image.src}
-                  onContextMenu={contextMenuDelete}
-                />
-              );
-            })}
+          <AlbumCarousel
+            imagesByLabel={
+              !loading &&
+              imagesByLabel.length >= 1 &&
+              imagesByLabel.map((image) => {
+                return (
+                  <div key={image.title}>
+                    <img
+                      alt={image.title}
+                      src={image.src}
+                      onContextMenu={contextMenuDelete}
+                    />
+                    <p className="legend">{image.title}</p>
+                  </div>
+                );
+              })
+            }
+          />
         </div>
       </div>
     </div>

@@ -1,14 +1,25 @@
-body {
-  padding-left: 2vh;
+.pageContainer {
+  height: max-content;
+  width: 97vw;
+  margin: auto;
+}
+.pageContainer::before {
+  content: "";
+  background-image: url(../media/gridBackground.jpeg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  z-index: -2;
 }
 .albumContainer {
-  background: url(../media/gridBackground.jpeg);
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  margin: auto;
+  width: 60vw;
 }
-.albumContainer img {
-  max-height: 30vh;
-  width: auto;
+
+.album h1 {
+  text-align: center;
 }

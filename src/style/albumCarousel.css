@@ -1,0 +1,8 @@
+.carousel .slide img {
+  max-height: min-content;
+}
+
+.carousel {
+  /* max-width: 95vw; */
+  max-height: 80vh;
+}

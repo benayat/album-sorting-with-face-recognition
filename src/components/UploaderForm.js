@@ -36,16 +36,19 @@ const UploaderForm = (props) => {
     <div className="uploader">
       <form className="form" onSubmit={getImageInfo}>
         <label>
-          name:
+          name:<span> </span>
           <input
             type="text"
-            disabled={props.type === "familyMembers" ? false : true}
             value={currentLabel}
             onChange={(e) => setLabel(e.target.value)}
+            required
           />
         </label>
         <input type="file" onChange={getFile} />
-        <button>upload image</button>
+        <label>
+          click to finish!<span> </span>
+          <button>upload image</button>
+        </label>
       </form>
     </div>
   );

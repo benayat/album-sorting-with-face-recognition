@@ -16,7 +16,7 @@ const FaceapiProvider = (props) => {
   const initialState = {
     modulesLoaded: false,
     labeledDescriptors: [],
-    loading: true,
+    loading: false,
     minMatchRate: 0.8,
     currentMatch: false,
   };
@@ -49,20 +49,20 @@ const FaceapiProvider = (props) => {
       .withFaceLandmarks()
       .withFaceDescriptor();
   };
-  // const getDetectionResult = async (descriptor1, descriptor2) => {
-  //   if (!state.modulesLoaded) {
-  //     await loadModules();
-  //   }
-  //   const faceMatcher = new faceapi.FaceMatcher(descriptor1);
-  //   const bestMatch = faceMatcher.findBestMatch(descriptor2.descriptor);
-  //   console.log(bestMatch.toString());
-  //   const matchRate = parseFloat(bestMatch.toString().slice(-5, -1));
-  //   if (matchRate > state.minMatchRate) {
-  //     console.log('match!');
-  //     return true;
-  //   }
-  //   return false;
-  // };
+  const getDetectionResult = async (descriptor1, descriptor2) => {
+    if (!state.modulesLoaded) {
+      await loadModules();
+    }
+    const faceMatcher = new faceapi.FaceMatcher(descriptor1);
+    const bestMatch = faceMatcher.findBestMatch(descriptor2.descriptor);
+    console.log(bestMatch.toString());
+    const matchRate = parseFloat(bestMatch.toString().slice(-5, -1));
+    if (matchRate > state.minMatchRate) {
+      console.log("match!");
+      return true;
+    }
+    return false;
+  };
   const addFamilyMemberFaceapi = async (label, src) => {
     dispatch({ type: "SENDING_REQUEST" });
     const currentDescriptor = await getSingleDescriptor(label, src);
@@ -100,6 +100,7 @@ const FaceapiProvider = (props) => {
       src,
       labels: matchedLabels,
     });
+    dispatch({ type: "REQUEST_FINISHED" });
   };
   return (
     <FaceapiContext.Provider
@@ -110,6 +111,8 @@ const FaceapiProvider = (props) => {
         loadModules: loadModules,
         addFamilyMemberFaceapi: addFamilyMemberFaceapi,
         addNewImageFaceapi: addNewImageFaceapi,
+        getSingleDescriptor: getSingleDescriptor,
+        getDetectionResult: getDetectionResult,
       }}
     >
       {props.children}

@@ -1,7 +1,7 @@
 .dropZone {
   border: 1px dotted black;
   margin-right: 1rem;
-  background: rgba(255, 0, 0, 0.4);
+  background: bisque;
   width: 60%;
   flex: 1fr;
 }
