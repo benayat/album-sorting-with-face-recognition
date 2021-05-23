@@ -5,7 +5,7 @@
 }
 .pageContainer::before {
   content: "";
-  background-image: url(../media/gridBackground.jpeg);
+  background-color: #98fb98;
   background-size: cover;
   position: absolute;
   top: 0px;

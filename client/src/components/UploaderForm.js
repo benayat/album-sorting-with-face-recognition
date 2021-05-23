@@ -7,11 +7,6 @@ const UploaderForm = (props) => {
   //read the file and decode it
   const getFile = (e) => {
     console.log(e);
-    if (e.target && e.target.files[0].size > 3000000) {
-      console.error(`can't upload files larger then 3 MB`);
-      setFile(null);
-      return;
-    }
     let reader = new FileReader();
     // const file = e.target.files[0];
     reader.readAsDataURL(e.target.files[0]);
